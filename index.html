@@ -118,6 +118,20 @@
     letter-spacing: 0.3px;
   }
 
+  .food-note {
+    color: #1a1200;
+    background: linear-gradient(180deg, #ffe08a 0%, #f5b735 100%);
+    border: 1px solid rgba(255, 224, 138, 0.8);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    line-height: 1.35;
+    margin: 0 0 12px 0;
+    padding: 9px 8px;
+    box-shadow: 0 4px 14px rgba(245, 166, 35, 0.2);
+  }
+
   .highlights {
     background: linear-gradient(180deg, #efe9da 0%, #cfc7b3 100%);
     color: #1a1a1a;
@@ -130,15 +144,6 @@
 
   .bottom {
     padding: 22px 12px 30px 12px;
-  }
-
-  .food-note {
-    color: #f5c96b;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    line-height: 1.45;
-    margin-bottom: 14px;
   }
 
   .fewseats {
@@ -175,8 +180,41 @@
   }
 
   @media (max-width: 420px) {
-    .meta-row { gap: 16px; }
-    .highlights { font-size: 12px; }
+    body { padding: 0; }
+    .poster {
+      min-height: 100svh;
+      border-radius: 0;
+      padding: 16px 18px 0 18px;
+    }
+    .logo {
+      width: 82px;
+      height: 82px;
+      margin-bottom: 8px;
+    }
+    .brand { font-size: 21px; }
+    .presents {
+      font-size: 19px;
+      margin-top: 1px;
+      margin-bottom: 3px;
+    }
+    .callig {
+      max-height: 112px;
+      margin: 2px auto;
+      object-fit: contain;
+    }
+    .meta-row {
+      gap: 16px;
+      margin-top: 8px;
+      padding-bottom: 9px;
+    }
+    .meta-label { font-size: 9px; }
+    .meta-value, .venue-value { font-size: 12px; }
+    .venue { padding: 8px 0 9px 0; }
+    .food-note { font-size: 12px; margin-bottom: 8px; padding: 7px 6px; }
+    .highlights { font-size: 11px; padding: 9px 8px; margin: 0 -18px; }
+    .bottom { padding: 12px 6px 16px 6px; }
+    .fewseats { font-size: 12px; margin-bottom: 10px; }
+    .ticket-btn { font-size: 14px; padding: 10px 34px; }
   }
 </style>
 </head>
@@ -206,10 +244,11 @@
       <div class="venue-value">DELHI DARBAR RESTAURANT, GREEN VALLEY</div>
     </div>
 
+    <div class="food-note">Unlimited Food, Snacks &amp; Drinks (Veg &amp; Non-Veg)</div>
+
     <div class="highlights">DANCE &bull; DJ &bull; TALENT SHOW</div>
 
     <div class="bottom">
-      <div class="food-note">UNLIMITED FOOD &amp; DRINKS PROVIDED<br>(VEG &amp; NON-VEG)</div>
       <div class="fewseats">Only a few seats left &mdash; don't miss out</div>
       <a class="ticket-btn" id="ticketLink" href="#" target="_blank" rel="noopener">BOOK TICKETS</a>
     </div>
