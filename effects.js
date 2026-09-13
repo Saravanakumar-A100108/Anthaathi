@@ -15,5 +15,6 @@ requestAnimationFrame(() => {
 });
 
 window.setTimeout(() => {
+  foodNote.classList.add('is-bright');
   foodNote.classList.add('is-ready');
 }, 650);

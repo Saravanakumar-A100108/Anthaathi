@@ -141,7 +141,7 @@
     background: linear-gradient(180deg, #ffe08a 0%, #f5b735 100%);
     border: 1px solid rgba(255, 224, 138, 0.8);
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 0.2px;
     line-height: 1.35;
@@ -152,6 +152,14 @@
 
   .food-note.is-ready {
     animation: food-glow 1.1s ease-out both;
+  }
+
+  .food-note.is-bright {
+    background: linear-gradient(180deg, #ffc247 0%, #ff7600 100%);
+    border-color: #ffc247;
+    color: #170d00;
+    text-shadow: 0 1px 0 rgba(255, 220, 130, 0.45);
+    box-shadow: 0 5px 22px rgba(255, 118, 0, 0.42);
   }
 
   @keyframes food-glow {
@@ -238,7 +246,7 @@
     .meta-label { font-size: 10px; }
     .meta-value, .venue-value { font-size: 13px; }
     .venue { padding: 11px 0 13px 0; }
-    .food-note { font-size: 13px; margin-bottom: 11px; padding: 9px 6px; }
+    .food-note { font-size: 14px; margin-bottom: 11px; padding: 9px 6px; }
     .highlights { font-size: 12px; padding: 11px 8px; margin: 0 -18px; }
     .bottom { padding: 18px 6px 22px 6px; }
     .fewseats { font-size: 13px; margin-bottom: 15px; }
